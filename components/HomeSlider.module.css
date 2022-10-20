@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* This background-url must be the same background-url of the last slide   */
+	background-image: url('../public/296849290_1158588811655942_7581621946965336273_n.webp');
+	background-size: 100% 100vh;
+}
+
+.header {
+	position: absolute;
+	color: aliceblue;
+	font-size: 3rem;
+	margin: 0px;
+	padding: 50px;
+}
+
+.button {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 60px;
+	background-color: transparent;
+    border-radius: 10%;
+	border-width: 6px;
+	border-color: aliceblue;
+}
+
+.button:hover {
+	background-color: aliceblue;
+}
+
+.button_text {
+	font-size: 1.8rem;
+	margin: 0px;
+	padding: 0px;
+	color: aliceblue;
+}
+
+.button_text:hover {
+	color: rgb(0, 0, 0);
+}
+
+.container .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	animation: animate 8s infinite linear;
+	overflow: hidden;
+}
+
+.container .slide::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+}
+
+.container .slide.slide1::before {
+	background-image: url('../public/116272033_108453384199240_8799507240059188282_n.jpg');
+	background-size: 100% 100vh;
+}
+
+.container .slide.slide2::before {
+	background-image: url('../public/158375447_469430684098163_8480465323817622220_n.jpg');
+	background-size: 100% 100vh;
+}
+
+.container .slide.slide3::before {
+	background-image: url('../public/282483778_168797228919682_7113929294090807041_n.webp');
+	background-size: 100% 100vh;
+}
+
+.container .slide.slide4::before {
+	background-image: url('../public/296849290_1158588811655942_7581621946965336273_n.webp');
+	background-size: 100% 100vh;
+}
+
+/****/
+.container .slide.slide1 {
+	animation-delay: 0s;
+}
+
+.container .slide.slide2 {
+	animation-delay: 2s;
+}
+
+.container .slide.slide3 {
+	animation-delay: 4s;
+}
+
+.container .slide.slide4 {
+	animation: animateLast 8s infinite linear;
+	animation-delay: 6s;
+}
+
+@keyframes animate {
+	0% {
+		width: 0;
+	}
+	25% {
+		width: 100%;
+	}
+	50% {
+		width: 100%;
+	}
+	51% {
+		width: 0%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+@keyframes animateLast {
+	0% {
+		width: 0;
+	}
+	25% {
+		width: 100%;
+	}
+	26% {
+		width: 0;
+	}
+	100% {
+		width: 0%;
+	}
+}
