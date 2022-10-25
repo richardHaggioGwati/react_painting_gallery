@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	background-color: aqua;
+	flex-direction: row;
+	justify-content: center;
+	padding: 50px;
+	align-items: center;
+}
+
+.image_container {
+	min-height: 55vh;
+	min-width: 60%;
+    position: relative;
+	border: solid 5px red;
+    background-color: yellowgreen;
+    z-index: 2;
+}
+
+.overflowing_container {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px -150px;
+    width: 40%;
+    gap: 10px;
+    height: 50%;
+}
+
+.overflowing_text_single_container {
+	position: relative;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.overflowing_text {
+	margin: 0px;
+	width: fit-content;
+	font-size: 3vh;
+	font-weight: 600;
+	letter-spacing: 5px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+

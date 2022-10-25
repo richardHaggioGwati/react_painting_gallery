@@ -1,0 +1,40 @@
+.serving {
+    background-image: url(https://s6.postimg.cc/wrx0cu6q9/about-bg.jpg);
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.serving .head {
+    position: absolute;
+    top: 0px;
+    left: 55%;
+    border: 2px solid #000;
+    color: #000;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.serving .bode {
+    position: absolute;
+    top: 90px;
+    left: 55%;
+    padding: 20px;
+}
+
+.serving .bode h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+    margin-top: 23px;
+}
+
+.serving .bode h2 span {
+    color: #A7C44C;
+    font-weight: bold;
+
+}
+
+.serving .bode p {
+    font-size: 24px;
+}
