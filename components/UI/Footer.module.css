@@ -1,0 +1,18 @@
+.footer_container {
+    min-width: 20vh;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon{
+    width: 3vh;
+    margin: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.footer_icon:hover {
+    transform: scale(1.5);
+}
+
