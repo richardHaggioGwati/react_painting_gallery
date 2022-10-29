@@ -1,40 +1,30 @@
-.serving {
-    background-image: url(https://s6.postimg.cc/wrx0cu6q9/about-bg.jpg);
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+.container {
+	padding: 5vh 5vw;
 }
 
-.serving .head {
-    position: absolute;
-    top: 0px;
-    left: 55%;
-    border: 2px solid #000;
-    color: #000;
+.fixed_image {
+	background-image: url('../../public/297727039_359291466406684_7647062731419294774_n.jpg'),
+		url('../../public/307449994_198432472622882_5838321341198293388_n.jpg');
+	height: 70vh;
+	background-size: 25%, 25%;
+	background-repeat: no-repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: right 10% center, left 10% center;
+	position: relative;
+}
+
+.bode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 20px;
+}
+
+.bode h2 {
+	font-size: 5vh;
+	margin-bottom: 0px;
+	margin-top: 23px;
+    color: aliceblue;
     padding: 20px;
-    font-size: 30px;
-}
-
-.serving .bode {
-    position: absolute;
-    top: 90px;
-    left: 55%;
-    padding: 20px;
-}
-
-.serving .bode h2 {
-    font-size: 45px;
-    margin-bottom: 0px;
-    margin-top: 23px;
-}
-
-.serving .bode h2 span {
-    color: #A7C44C;
-    font-weight: bold;
-
-}
-
-.serving .bode p {
-    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
