@@ -10,8 +10,8 @@ const Gallery: NextPage = () => {
 			<>
 				<NavBar />
 				<Carousel />
-				<MobileImageScroll/>
 				<Footer />
+
 			</>
 		</div>
 	);

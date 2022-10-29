@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import HomeSlider from '../components/HomeSlide'
+import HomeSlider from '../components/Home/HomeSlide'
 
 const Home: NextPage = () => {
   return (
